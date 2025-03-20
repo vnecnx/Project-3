@@ -9,5 +9,5 @@ IMPORTANT: Document all design decisions and their reasoning here.
 
 ---03/20---
 - Began working on GSAP js script
-    - Error shows up, saying 'ReferenceError: gsap is not defined
-    at main.js:24:16'
+    - Error shows up, saying 'ReferenceError: gsap is not defined at main.js:24:16'
+    - This seems to be making my animation not work at all
