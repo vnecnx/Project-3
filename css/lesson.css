@@ -1,0 +1,35 @@
+body {
+    min-height: 100vw;
+    background-color: lightblue;
+}
+
+.chao-img {
+    width: 200px;
+}
+
+.chao-img-2 {
+    width: 200px;
+    transition:  transform .3s ease-in-out
+}
+
+.chao-img-2:hover {
+    perspective: 500px;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.abs_container {
+    transform-origin: 0 100%;
+    transition:  transform 0.3s ease-in-out
+}
+
+.abs_container:hover {
+    transform: translate3d(200px, 0, 0) skew(-20deg, 0);
+    transition:  transform 0.3s ease
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
