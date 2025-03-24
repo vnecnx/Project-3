@@ -5,7 +5,7 @@
 
 body {
     /*background-color: rgb(28, 35, 77);*/
-    background-color: rgb(240, 233, 213);
+    background-color: rgb(13, 10, 20);
     font-size: 30px;
 }
 
@@ -39,15 +39,20 @@ section {
     border-radius: 99999px 99999px 0 0;
 }
 
+.lamp-light {
+    position: absolute;
+    transform: translate(0, 50%);
+    background-color: yellow;
+    opacity: 50%;
+    width: 40%;
+    height: 100%;
+}
+
 .lamp-bulb {
     height: 40px;
     width: 80px;
     background-color: rgb(255, 236, 62);
     border-radius: 0 0 99999px 99999px;
-}
-
-.lamp-switch {
-
 }
 
 .lamp-chain {
@@ -60,14 +65,14 @@ section {
 }
 
 .lamp-chain-link {
-    background-color: gray;
+    background-color: #b3b3b3;
     width: 10px;
     height: 20px;
     border-radius: 8px;
 }
 
 .lamp-chain-handle {
-    background-color: rgb(94, 56, 26);
+    background-color: #846b58;
     width: 20px;
     height: 30px;
     border-radius: 32px;
@@ -79,13 +84,13 @@ section {
 /*SNOOZE*/
 
 .snooze-container {
-    color: aliceblue;
+    color: black;
 }
 
 .snooze-container p {
     font-size: 48px;
     font-family: sans-serif;
-    color: black;
+    color: aliceblue;
 }
 
 
@@ -129,7 +134,7 @@ section {
     border-radius: 12px;
     color: #2f2f2f;
     background-color: #36db78;
-    box-shadow: 0 0 4px 1px #36db78;
+    box-shadow: 0 0 4px 1px #36db78; 
     padding: 20px 24px;
     font-family: monospace;
     display: flex;
@@ -156,6 +161,14 @@ section {
     font-size: 16px;
     display: inline-flex;
     flex-direction: column;
+}
+
+.am {
+    color: #36db78;
+}
+
+.pm {
+    color: #2f2f2f;
 }
 
 .clock-stand {
@@ -220,13 +233,15 @@ section {
     background-color: #aac3f7;
     padding: 0 10px 10px 10px;
     border-radius: 0 0 8px 8px;
+    width: 100px;
+    height: 180px;
 }
 
 .wine-liquid {
-    width: 80px;
-    height: 180px;
     background-color: rgb(199 124 155);
     border-radius: 8px;
+    width: 100%;
+    height: 100%;
 }
 
 /*Switch example*/

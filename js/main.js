@@ -23,11 +23,21 @@
 
 const bodytl = gsap.timeline();
 const button = document.querySelector('.snooze-container');
+const buttontext = document.querySelector('.snooze-container p')
 const body = document.querySelector('body');
 
 button.addEventListener('click', () =>{
-    bodytl.to(".wine-liquid", {duration: 1, ease: "power4.out", backgroundColor:rgb(24, 31, 76)}, "start")
+    bodytl.to(".wine-liquid", {duration: 1, ease: "power4.out", backgroundColor:"#aac3f7"}, "start")
+    bodytl.to("body", {duration: 1, ease: "power4.out", backgroundColor: "rgb(240, 233, 213)"}, "start")
+    bodytl.to(".clock-display", {duration: 1, ease: "power4.out", backgroundColor: "#2f2f2f", boxShadow: "none"}, "start") 
+    bodytl.to(".clock-display-text", {duration: 1, ease: "power4.out", color: "#36db78"}, "start") 
+    bodytl.to(".snooze-container p", {duration: 1, ease: "power4.out", color: "black"}, "start") 
 })
+
+button.addEventListener('click', () =>{
+    buttontext.innerHTML = "SNOOZE";
+})
+
 
 // TL template
 // bodytl.to(".class", {duration: 0, ease: "easetype"}, "start") 
