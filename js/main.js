@@ -50,8 +50,11 @@ const chainbutton = document.querySelector('.lamp-chain');
 chainbutton.addEventListener('click', () =>{
     console.log('clicked');
     // lamptl.to(".lamp-bulb", {duration: 1, ease: "power4.out", backgroundColor: "rgb(255, 236, 62)"}, "lighton")
-    lamptl.to(".lamp-light", {duraton: 1, ease: "power4.out", opacity: ".5"}, "lighton")
-    lamptl.to(".lamp-chain", {duration: 1, ease: "power4.out", })
+    lamptl.to(".lamp-chain", {duration: 0.5, ease: "power4.out", y: 20})
+    lamptl.to(".lamp-chain", {duration: 0.5, ease: "power4.out", y: 0}, "lighton")
+    lamptl.to(".lamp-light", {duration: 1, ease: "bounce.in", opacity: ".5"}, "lighton")
+    // lamptl.to(".lamp-light", {duration: 0.2, ease: "power4.out", opacity: "0"})
+    // lamptl.to(".lamp-light", {duration: 1, ease: "power4.out", opacity: ".5"})
 });
 
 // TL template
