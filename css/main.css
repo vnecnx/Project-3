@@ -37,27 +37,27 @@ section {
     width: 300px;
     background-color: #b5af81;
     border-radius: 99999px 99999px 0 0;
+    z-index: 2;
 }
 
 .lamp-light {
     position: absolute;
-    transform: translate(0, 50%);
     background-color: yellow;
-    opacity: 50%;
+    opacity: 0;
     width: 40%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .lamp-bulb {
     height: 40px;
     width: 80px;
-    background-color: rgb(255, 236, 62);
+    background-color: rgb(212, 211, 194);
     border-radius: 0 0 99999px 99999px;
 }
 
 .lamp-chain {
     position: relative;
-    top: -40px;
+    top: -60px;
     right: 60px;
     display: flex;
     flex-direction: column;

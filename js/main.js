@@ -19,12 +19,12 @@
 // })
 
 
-// JS scripts placed here
+// SNOOZE BUTTON
 
 const bodytl = gsap.timeline();
 const button = document.querySelector('.snooze-container');
-const buttontext = document.querySelector('.snooze-container p')
-const body = document.querySelector('body');
+const buttontext = document.querySelector('.snooze-container p');
+// const body = document.querySelector('body');
 
 button.addEventListener('click', () =>{
     bodytl.to(".wine-liquid", {duration: 1, ease: "power4.out", backgroundColor:"#aac3f7"}, "start")
@@ -32,12 +32,27 @@ button.addEventListener('click', () =>{
     bodytl.to(".clock-display", {duration: 1, ease: "power4.out", backgroundColor: "#2f2f2f", boxShadow: "none"}, "start") 
     bodytl.to(".clock-display-text", {duration: 1, ease: "power4.out", color: "#36db78"}, "start") 
     bodytl.to(".snooze-container p", {duration: 1, ease: "power4.out", color: "black"}, "start") 
-})
+});
 
 button.addEventListener('click', () =>{
     buttontext.innerHTML = "SNOOZE";
-})
+});
 
+
+
+
+
+// LAMP LIGHT
+
+const lamptl = gsap.timeline();
+const chainbutton = document.querySelector('.lamp-chain');
+
+chainbutton.addEventListener('click', () =>{
+    console.log('clicked');
+    // lamptl.to(".lamp-bulb", {duration: 1, ease: "power4.out", backgroundColor: "rgb(255, 236, 62)"}, "lighton")
+    lamptl.to(".lamp-light", {duraton: 1, ease: "power4.out", opacity: ".5"}, "lighton")
+    lamptl.to(".lamp-chain", {duration: 1, ease: "power4.out", })
+});
 
 // TL template
 // bodytl.to(".class", {duration: 0, ease: "easetype"}, "start") 

@@ -20,7 +20,13 @@ IMPORTANT: Document all design decisions and their reasoning here.
     - Issues with making it into a trapezoid
     - Will eventually make this light toggleable via the .lamp-chain
 
+---03/24---
+- Tried to add interactable lamp
+    - Issue: for some reason it will not start animation, reason unknown
 
----TODO---
+
+---TODO/QUESTIONS---
 ___ Figure out a way for animations to be toggleable/reversed when buttons are clicked
         - If there is no answer to this, that's fine, just keep it as is
+___ Find out why lamp light js animation may not be working
+___ Ask for a guidance on how to make a trapezoid for the light
