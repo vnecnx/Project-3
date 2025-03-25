@@ -7,6 +7,7 @@ body {
     /*background-color: rgb(28, 35, 77);*/
     background-color: rgb(13, 10, 20);
     font-size: 30px;
+    padding: 20px;
 }
 
 section {
@@ -83,29 +84,29 @@ section {
 
 @media (max-height: 936px) {
     .lamp-cover {
-        height: 120px;
-        width: 300px;
-        /* incomplete */
+        height: 100px;
+        width: 240px;
     }
 
     .lamp-bulb {
-        height: 40px;
-        width: 80px;
-        /* incomplete */
+        height: 30px;
+        width: 60px;
+    }
+
+    .lamp-chain {
+        right: 40px;
     }
 
     .lamp-chain-link {
-        width: 10px;
-        height: 20px;
-        border-radius: 8px;
-        /* incomplete */
+        width: 8px;
+        height: 16px;
+        border-radius: 4px;
     }
     
     .lamp-chain-handle {
-        width: 20px;
-        height: 30px;
+        width: 12px;
+        height: 20px;
         border-radius: 32px;
-        /* incomplete */
     }
 }
 
@@ -290,17 +291,23 @@ section {
 }
 
 @media (max-height: 936px) {
+    .wine-neck {
+        height: 48px;
+    }
+    
+    .wine-curve {
+        border-radius: 24px 24px 0 0;
+        height: 28px;
+    }
+    
     .wine-body {
         width: 60px;
         height: 120px;
+        padding: 0 5px 5px 5px;
     }
 
-    .wine-curve {
-        border-radius: 24px 24px 0 0;
-    }
-
-    .wine-neck {
-        height: 56px;
+    .wine-liquid {
+        border-radius: 4px;
     }
 }
 
