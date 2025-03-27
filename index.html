@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="A starter website for my first ART 3020 project">
+  <title>Hangover</title>
+  <meta name="description" content="An experimental site for animations, featuring a night and day mode, and a working lamp">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -14,19 +14,19 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <section>
     <div class="lamp">
       <div class="lamp-cover"></div>
-      <div class="lamp-light"></div>
       <div class="lamp-bulb"></div>
       <div class="lamp-chain">
         <div class="lamp-chain-link"></div>
@@ -41,8 +41,10 @@
         <div class="lamp-chain-handle"></div>
       </div>
     </div>
+    
+    <div class="lamp-light"></div>
 
-    <div class="snooze-container">
+    <div class="snooze-container hvr-bob">
       <p>BOOZE</p>
     </div>
 

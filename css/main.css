@@ -7,11 +7,11 @@ body {
     /*background-color: rgb(28, 35, 77);*/
     background-color: rgb(13, 10, 20);
     font-size: 30px;
-    padding: 20px;
+    height: 100vh;
 }
 
 section {
-    padding: 40px;
+    padding: 20px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .lamp-cover {
@@ -45,11 +46,11 @@ section {
     position: absolute;
     top: 0;
     opacity: 0;
-    width: 100%;
+    width: 400px;
     min-height: 100%;
     border-bottom: 100vh solid yellow;
-    border-left: 90px solid transparent;
-    border-right: 90px solid transparent;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
 }
 
 .lamp-bulb {
@@ -116,19 +117,24 @@ section {
 /*SNOOZE*/
 
 .snooze-container {
-    color: black;
+    background-color: rgb(74, 84, 94);
+    box-shadow: 8px 8px 0px 0px #3a3a9c;
     z-index: 10;
+    padding: 28px;
+    border-radius: 20px;
 }
 
 .snooze-container p {
-    font-size: 48px;
-    font-family: sans-serif;
-    color: aliceblue;
+    font-size: 28px;
+    font-family: "Boldonse", sans-serif;
+    color: white;
+    z-index: 11;
+    margin: 0;
 }
 
 @media (max-height: 936px) {
     .snooze-container p {
-        font-size: 36px;
+        font-size: 18px;
     }
   }
 
