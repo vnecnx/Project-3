@@ -1,10 +1,9 @@
-/* Place CSS styles here */
+/*GLOBAL & GENERAL*/
 * {
     box-sizing: border-box;
 }
 
 body {
-    /*background-color: rgb(28, 35, 77);*/
     background-color: rgb(13, 10, 20);
     font-size: 30px;
     height: 100vh;
@@ -315,13 +314,4 @@ section {
     .wine-liquid {
         border-radius: 4px;
     }
-}
-
-
-
-
-
-/*Switch example*/
-.expanded .lamp-bulb {
-    background-color: red;
 }
