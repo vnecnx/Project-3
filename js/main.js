@@ -34,8 +34,12 @@ button.addEventListener('click', () =>{
     bodytl.to(".snooze-container", {duration: 1, ease: "power4.out", boxShadow: "none"}, "start") 
     bodytl.to(".snooze-container p", {duration: 1, ease: "power4.out", color: "black"}, "start")
     bodytl.to(".snooze-container", {duration: 1, ease: "power4.out", backgroundColor: "rgb(243, 244, 255)", boxShadow: "8px 8px 0 0 #afafff"}, "start")
+    // bodytl.to(".snooze-container", {duration: 1, ease: "power4.out", backgroundColor: "rgb(243, 244, 255)", boxShadow: "8px 8px 0 0 #afafff"}, "start",{onComplete: function() {this.targets().forEach(elem => elem.classList.add("active"))}
 });
 
+// button.addEventListener('click', () =>{
+//     bodytl.reverse()
+// });
 
 
 button.addEventListener('click', () =>{
