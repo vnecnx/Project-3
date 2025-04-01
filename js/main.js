@@ -1,6 +1,5 @@
 // SNOOZE BUTTON
 
-
 const button = document.querySelector('.snooze-container');
 const buttontext = document.querySelector('.snooze-container p');
 const buttonactive = document.querySelector('.buttonactive');
@@ -38,13 +37,25 @@ button.addEventListener('click', () =>{
 
 // LAMP LIGHT
 
-const lamptl = gsap.timeline();
 const chainbutton = document.querySelector('.lamp-chain');
-
-chainbutton.addEventListener('click', () =>{
-    console.log('clicked');
-    lamptl.to(".lamp-chain", {duration: 0.5, ease: "power4.out", y: 20})
-    lamptl.to(".lamp-bulb", {duration: 1, ease: "bounce.in", backgroundColor: "rgb(255, 236, 62)"}, "lighton")
-    lamptl.to(".lamp-chain", {duration: 0.5, ease: "power4.out", y: 0}, "lighton")
-    lamptl.to(".lamp-light", {duration: 1, ease: "bounce.in", opacity: ".5"}, "lighton")
-});
+const lampactive = document.querySelector('.lampactive');
+const lamptl = gsap.timeline(
+    chainbutton.addEventListener('click', () =>{
+        console.log('clicked');
+        lamptl.to(".lamp-chain", {duration: 0.5, ease: "power4.out", y: 20, 
+            onStart: () => {
+            console.log("Animation started!");
+            chainbutton.classList.remove('lampactive');}}, "lighton")
+        lamptl.to(".lamp-bulb", {duration: 1, ease: "bounce.in", backgroundColor: "rgb(255, 236, 62)"}, "lighton")
+        lamptl.to(".lamp-chain", {duration: 0.5, ease: "power4.out", y: 0}, "lighton")
+        lamptl.to(".lamp-light", {duration: 1, ease: "bounce.in", opacity: ".5", 
+            onComplete: () => {
+            console.log("Animation completed");
+            lampactive.addEventListener('click', () => {
+                lamptl.reverse();
+                chainbutton.classList.add('lampactive');
+            }) 
+        }},      
+            "lighton")
+    })
+);
