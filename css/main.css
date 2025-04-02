@@ -181,7 +181,7 @@ section {
     background-color: #36db78;
     box-shadow: 0 0 4px 1px #36db78; 
     padding: 20px 24px;
-    font-family: monospace;
+    font-family: "Tiny5", monospace;
     display: flex;
     gap: 12px;
     align-items: center;
